@@ -1,0 +1,49 @@
+================ BASIC ERRORS ================
+I has a apple.
+She go to school everyday.
+He don't like pizza.
+They was playing cricket.
+We is happy.
+
+================ TENSE ERRORS ================
+I go to school yesterday.
+She eat food last night.
+He come late today morning.
+They didn't went there.
+I am finished my work.
+
+================ ARTICLE ERRORS ================
+I saw a elephant.
+She bought an car.
+He is a honest man.
+This is an university.
+I have a umbrella.
+
+================ PREPOSITION ERRORS ================
+He is good in math.
+She is married with him.
+I am waiting since two hours.
+He depends of his parents.
+She is afraid from dogs.
+
+================ COMPLEX SENTENCES ================
+Although he was tired but he continued working.
+She didn't knew that he was coming.
+If I will go there, I will call you.
+He said me that he is busy.
+I am having a car.
+
+================ MIXED ERRORS ================
+I has a apple and she go to school yesterday.
+He don't knows anything about this topic.
+They was not understanding the problem clearly.
+She have completed her work yesterday.
+We was planning to go but it rains heavily.
+
+================ EDGE CASES ================
+""
+"     "
+Hello @@@ ### $$$
+
+================ ADVANCED PARAGRAPH ================
+Yesterday I go to market and buyed some fruits. The shopkeeper give me a apple and banana but I think the price was too much higher than expected. I didn't argued with him because I was getting late for my office.
