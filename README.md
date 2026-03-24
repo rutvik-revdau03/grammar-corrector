@@ -78,44 +78,46 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Run the Server
+### 4. Run the Server (API)
 
-```
+```bash
 uvicorn app.main:app --reload
 ```
 
 ---
 
-## API Documentation
+## Usage (Terminal/CLI)
 
-Open in browser:
+You can also use the tool directly from your terminal:
 
-```
-http://127.0.0.1:8000/docs
-```
+*   **Interactive Mode:**
+    ```bash
+    python -m app.cli
+    ```
+*   **File Processing:**
+    ```bash
+    python -m app.cli --file test_sentences.txt
+    ```
+*   **Direct Argument:**
+    ```bash
+    python -m app.cli --text "I has a apple"
+    ```
 
 ---
 
-## API Endpoint
+## API Documentation
 
-### POST /api/correct
+Open in browser: `http://127.0.0.1:8000/docs`
 
-#### Request Body
+### Endpoints
 
-```
-{
-  "text": "I has a apple"
-}
-```
+#### POST /api/correct
+*   Input: `{"text": "string"}`
+*   Output: Corrected text
 
-#### Response
-
-```
-{
-  "original": "I has a apple",
-  "corrected": "I have an apple"
-}
-```
+#### POST /api/correct-file
+*   Input: `.txt` file upload
+*   Output: JSON list of all corrected lines from the file
 
 ---
 
@@ -129,8 +131,6 @@ http://127.0.0.1:8000/docs
 
 ## Future Enhancements
 
-* File upload support
-* Batch correction
-* Authentication
-* Frontend integration
-
+* Multiple language support
+* AI-powered deep correction
+* User authentication

@@ -77,6 +77,13 @@ Response Returned
 
 ---
 
+### 4.6 app/cli.py
+* Multi-mode terminal interface:
+  * --interactive: Real-time user prompt.
+  * --text: Single-line CLI argument.
+  * --file: Batch processing for text files.
+
+
 ## 5. Grammar Correction Engine
 
 ### Library: language-tool-python
@@ -106,11 +113,16 @@ Response Returned
 
 ## 7. API Design
 
-### Endpoint:
+### Endpoints:
 
-POST /api/correct
+#### 7.1 POST /api/correct
+* Correct single sentence via JSON
 
-### Request:
+#### 7.2 POST /api/correct-file
+* Upload `.txt` file for batch correction
+* Returns a list of all line results
+
+### Request (7.1):
 
 ```
 {
@@ -131,12 +143,11 @@ POST /api/correct
 
 ## 8. Execution Flow
 
-1. User sends request
-2. FastAPI receives input
-3. Pydantic validates schema
-4. Custom validator checks rules
-5. Grammar service processes text
-6. Response returned to user
+1. User sends request (API/CLI/Prompt)
+2. Core services receive input
+3. Validator checks rules
+4. Grammar service processes text line(s)
+5. Results returned to user
 
 ---
 
